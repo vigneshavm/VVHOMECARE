@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>VVHomeCare</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <!--CSS - Custom-->
+    <link rel="stylesheet" href="/css/integration/integration.css">
+    <link rel="stylesheet" href="/css/common.css">
+
+
+    <!--JS - Frameworks and Plugins-->
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/lib/underscore-min.js"></script>
+    <script src="/lib/director/director.min.js"></script>
+    <script src="/js/common-ajax.js"></script>
+
+    <!--JS - Custom-->
+    <script src="/js/page-router.js" type="text/javascript"></script>
+    <script src="/js/page-loaders.js" type="text/javascript"></script>
+
+
+    <link rel="icon" href="images/favicon/wpl.ico" type="image/x-icon">
+</head>
+
+<body id="body">
+<style>
+    .ball-beat > div {
+        background: rgba(0, 162, 255, 0.72);
+    }
+    .logo_name a {
+        text-decoration: none;
+    }
+    .ball-beat.gray > div {
+        background: #999;
+    }
+    .ball-beat.orange > div {
+        background: orange;
+    }
+    .removeScroll {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+</style>
+<div class="container-fluid ">
+
+    <div class="row removeScroll">
+        <div class="span12">
+            <%- include ../home/leftsidemenu.html %>
+        </div>
+    </div>
+
+
+    <div class="row removeScroll menu_body">
+        <div id="bodyContent">
+            <%- body %>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

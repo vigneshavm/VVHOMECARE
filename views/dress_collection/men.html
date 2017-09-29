@@ -1,0 +1,43 @@
+
+<style>
+    #MEN{
+        background: peachpuff;
+    }
+</style>
+
+<div class="row individual_row center-body">
+
+    <% for(var i=0 ; i< pageInput.length; i++) { %>
+    <% if(pageInput){ %>
+    <div class="col-sm-offset-1 col-md-offset-0 col-sm-5 col-md-4 col-lg-3 logo_name">
+        <a href="#">
+            <img src="<%= pageInput[i].imgUrl %>">
+            <h4><%= pageInput[i].displayName %></h4>
+        </a>
+        <div class="row">
+            <% if(pageInput[i].price){ %>
+            <div class="col-md-8 price">
+                Start From:Rs <%= pageInput[i].price %>
+
+            </div>
+
+            <div class="col-md-4">
+                <a href="/add-to-cart/<%= pageInput[i]._id %>"  class="btn btn-success pull-right" role="button">Add to
+                    cart </a>
+            </div>
+            <% }else { %>
+            <div class="col-md-4">
+                <a href="/add-to-cart/<%= pageInput[i]._id %>"  class="btn btn-success" role="button">Add to
+                    cart </a>
+            </div>
+            <% } %>
+
+        </div>
+    </div>
+    <% }else { %>
+    <div class="col-sm-offset-1 col-md-offset-0 col-sm-5 col-md-4 col-lg-3 logo_name">
+        <h4>Coming Soon!</h4>
+    </div>
+    <% } %>
+    <% } %>
+</div>
