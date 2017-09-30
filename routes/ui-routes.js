@@ -1,5 +1,6 @@
 
-var homeLayout = "layout/home-layout.html";
+var homeLayout = "ustora/index.html";
+var homeLayout1 = "ustora/shop.html";
 
 
 var UIRoutes = function (app) {
@@ -16,7 +17,11 @@ UIRoutes.prototype.init = function () {
     //Init Routes
     app.get("/", function (req, res) {
         console.log("enter / call");
-        res.render("dress_collection/home.html", {layout: homeLayout});
+        res.render("ustora/shop.html", {layout: homeLayout1});
+    });
+    app.get("/", function (req, res) {
+        console.log("enter / call");
+        res.render("ustora/cart.html", {layout: homeLayout});
     });
 
 
