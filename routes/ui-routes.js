@@ -1,4 +1,3 @@
-
 var homeLayout = "vvhome/index.html";
 
 
@@ -20,6 +19,14 @@ UIRoutes.prototype.init = function () {
         res.render("vvhome/index.html", {layout: homeLayout});
     });
 
+    app.get("/contact", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/contact.html", {layout: false});
+    });
+    app.get("/register", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/register.html", {layout: false});
+    });
 
 };
 
