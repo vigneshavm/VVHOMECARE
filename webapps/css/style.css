@@ -1215,3 +1215,8 @@ ul.c-controls li a:hover {
     padding: 5px 10px;
     font-size: 1.25em;
 }
+
+.header-image{
+    width: 200%;
+    height: 200%;
+}
