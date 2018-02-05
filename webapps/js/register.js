@@ -31,9 +31,9 @@ function submitRequest(){
         success: function(result){
 
 
-          /*  $("#mobileNo").val("");
+           $("#mobileNo").val("");
             $("#name").val("");
             $("#Prefer").val("New");
-            $("#sel1").val("Washing machine");*/
+            $("#sel1").val("Washing machine");
     }});
 }
