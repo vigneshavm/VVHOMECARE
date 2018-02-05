@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/responsive.css">
 
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -80,7 +82,7 @@
 
     <label class="col-md-4 control-label" for="textinput">Name </label>
     <div class="col-md-4">
-        <input id="textinput" name="textinput" type="text" placeholder="ENTER YOUR NAME..." class="form-control input-md">
+        <input id="name" name="textinput" type="text" placeholder="ENTER YOUR NAME..." class="form-control input-md">
     </div>
 </div>
 
@@ -88,7 +90,7 @@
 
         <label class="col-md-4 control-label" for="textinput">Mobile No </label>
         <div class="col-md-4">
-            <input id="textinput" name="textinput" type="text" placeholder="ENTER YOUR MOBILE NUMBER..." class="form-control input-md">
+            <input id="mobileNo" name="textinput" type="text" placeholder="ENTER YOUR MOBILE NUMBER..." class="form-control input-md">
         </div>
     </div>
 
@@ -118,9 +120,10 @@
 
 
 <!-- Textarea -->
-<div class="form-group">
+    <div class="form-group">
   <div class="col-md-4 col-md-offset-4">
-   <button class="btn btn-success btn-lg btn-block">submit</button>
+   <!--<button  onclick="leaderboard()">submit</button>-->
+      <span class="btn btn-success btn-lg btn-block"  onclick="submitRequest()">Submit </span>
   </div>
 </div>
 
@@ -182,6 +185,7 @@
 
 <!-- Main Script -->
 <script src="/js/main.js"></script>
+<script src="/js/register.js"></script>
 
 <!-- Slider -->
 <script type="text/javascript" src="/js/bxslider.min.js"></script>
