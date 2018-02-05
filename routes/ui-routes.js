@@ -42,7 +42,7 @@ UIRoutes.prototype.init = function () {
          service: "Gmail",
          auth: {
          user: from,
-         pass: "G190993**"
+         pass: "*******|||12312|||||G190993**|||12312|||||*******"
          }
          });
 
