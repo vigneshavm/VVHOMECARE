@@ -29,6 +29,24 @@ UIRoutes.prototype.init = function () {
     });
 
 
+ app.get("/washing-machines", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/washing-machines.html", {layout: false});
+    });
+    app.get("/refrigerators", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/refrigerators.html", {layout: false});
+    });
+ app.get("/air-conditioners", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/air-conditioners.html", {layout: false});
+    });
+    app.get("/purifier", function (req, res) {
+        console.log("enter / contact.html");
+        res.render("vvhome/purifier.html", {layout: false});
+    });
+
+
     app.get("/submit", function (req, res) {
         console.log("enter / submit.html",req.query);
 
