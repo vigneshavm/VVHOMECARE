@@ -382,7 +382,8 @@ z-index: 999;}
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;overflow: hidden;border: 1px solid #ddd;
+    width: 100%;overflow: hidden;
+    /*border: 1px solid #ddd;*/
 }
 .product-hover:after {
   background: none repeat scroll 0 0 mistyrose;
@@ -1226,4 +1227,12 @@ ul.c-controls li a:hover {
     margin: 0 0 15px;
     color: #333;
     text-transform: uppercase;
+}
+
+.ac {
+    height: 120%;
+}
+.fr {
+    height: 650px;
+    width: 350px;
 }
