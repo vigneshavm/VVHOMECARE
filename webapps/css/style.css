@@ -1250,3 +1250,93 @@ font-family: Raleway,arial;
 font-weight: 700;
 margin-bottom: 15px;
 }
+
+
+.we-are-layout2_call  {
+    font-size: 23px;
+    background:#FBD232;
+    padding: 10px 0px 30px;
+    margin-bottom: 30px;
+}
+
+.we-are-layout2_call .btn {
+    background: #111;
+    color: #FBD232;
+}
+
+
+.services-style-01 .service-item_link {
+    /*position: absolute;*/
+    /*bottom: -38px;*/
+    right: 0px;
+    width: 100%;
+    background: #FBD232;
+    /*padding: 16px 20px;*/
+    text-align: center;
+}
+
+.service-item_link {
+    font-family: Montserrat;
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+    text-transform: capitalize;
+    display: block;
+}
+
+
+
+.step-section .step-box {
+    height: 180px;
+    width: 180px;
+    background: #6aa1bb;
+    border-radius: 50%;
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.step-section .step-box span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.heading{
+    text-align: center
+}
+
+
+.heading p {
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+
+.ph3, .step-section h3 {
+    padding: 0;
+    margin: 26px 0 11px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.how-section {
+    width: 100%;
+    clear: both;
+    background: url(../img/step-bg.jpg) right top;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.white-bg {
+    background: #fff!important;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
