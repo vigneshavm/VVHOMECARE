@@ -1320,8 +1320,14 @@ margin-bottom: 15px;
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
+
 }
 
+
+.ph3-title {
+    text-align: center;
+    color: white
+}
 
 .how-section {
     width: 100%;
