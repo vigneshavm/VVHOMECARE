@@ -1243,3 +1243,10 @@ ul.c-controls li a:hover {
     height: 400px;
     width: 300px;
 }
+.service-title
+{
+font-size: 18px;
+font-family: Raleway,arial;
+font-weight: 700;
+margin-bottom: 15px;
+}
