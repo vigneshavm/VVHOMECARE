@@ -1432,7 +1432,7 @@ section{
 }
 
 .how-section {
-    width: 100%;
+    width: auto;
     clear: both;
     background: url(../img/step-bg.jpg) right top;
     background-size: cover;
@@ -1497,3 +1497,46 @@ section{
 }
 
 .step-box.white-bg img {    margin-left: 15%;}
+
+
+/*/ Added by Thangam /*/
+.carousel-caption {
+    top: 52%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: rgba(23, 29, 28, .8);
+    box-shadow: 0 0 0 10px rgba(23, 29, 28, .8);
+    border: 5px solid rgba(255, 255, 255, .8);
+    padding: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.carousel-caption h3 {
+    border-right: 4px solid #fff;
+    margin: 0;
+}
+/*/ Added by Thangam /*/
+
+.washing p {
+    /*color: #FBD232;*/
+}
+.washing{
+    background-color: #fbfbfb;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.wpb_wrapper{
+    padding-left: 50px;
+}
