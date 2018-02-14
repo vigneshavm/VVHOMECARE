@@ -1439,6 +1439,16 @@ section{
     padding: 60px 0;
 }
 
+
+
+/*.service-pro {*/
+    /*width: auto;*/
+    /*clear: both;*/
+    /*background: */
+    /*background-size: cover;*/
+    /*padding: 60px 0;*/
+/*}*/
+
 .white-bg {
     background: #fff!important;
 }
@@ -1457,7 +1467,7 @@ section{
     text-align: center;
 }
 .provide-step{
-    background: url(../img/step-bg.jpg) right top;
+    background: url(../images/background/services-bg.jpg) right top;
 }
 .footer p {
     color: rgba(255, 255, 255, 0.6);
