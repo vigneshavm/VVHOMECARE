@@ -22,7 +22,28 @@
     <script src="/lib/jquery.min.js"></script>
     <script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
-
+    <style>
+        #map {
+            height:  300px;
+            width: 500px;
+        }
+    </style>
+    <script>
+        function initMap() {
+            var uluru = {lat: 11.0265, lng:77.1313};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBl5V46DupuSeve6MbonDxY1xIUg2orxE&callback=initMap">
+    </script>
 
 </head>
 <body>
@@ -451,7 +472,7 @@
         <div class="row">
 
 
-            <div class="col-md-4  col-sm-6">
+            <div class="col-md-3  col-sm-6">
                 <div class="footer-about-us">
                     <h2 style="color: goldenrod">VV HomeCare</h2>
                     <h4>Location: <a
@@ -475,7 +496,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6  col-md-offset-1 col-sm-6">
+            <div class="col-md-5   col-sm-6">
                 <div class="footer-newsletter">
                     <div class="row">
 
@@ -501,13 +522,20 @@
             </div>
 
 
+            <div class="col-md-3  col-sm-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
 
 <script type="text/javascript" src="/lib/jquery/jquery.min.js"></script>
-
-
 <script type="text/javascript" src="/lib/bootstrap/bootstrap.min.js"></script>
 <!-- jQuery sticky menu -->
 <script src="/js/owl.carousel.min.js"></script>
