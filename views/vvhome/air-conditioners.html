@@ -22,6 +22,29 @@
     <script src="/lib/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
 
+    <style>
+        #map {
+            height: 300px;
+            width: 400px;
+        }
+    </style>
+    <script>
+        function initMap() {
+            var uluru = {lat: 11.008128, lng: 77.012217};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 10,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBl5V46DupuSeve6MbonDxY1xIUg2orxE&callback=initMap">
+    </script>
+
 </head>
 <body>
 
@@ -38,7 +61,7 @@
         </div>
         <div class="navbar-collapse collapse">
             <div class="col-sm-2">
-                <img style="width: 60%;height: 50%" alt="Ting Tong Services" src="/img/tingtong.jpg">
+                <img style="width: 60%;height: 50%" alt="Ting Tong Services" src="/images/logo/Ting Tong_Logo Final.png">
             </div>
 
             <div class="col-sm-7">
@@ -198,13 +221,13 @@
     </div>
 </div>
 
-<div class="footer-top-area">
+<div class="footer-top-area footer">
     <div class="zigzag-bottom"></div>
     <div class="container">
         <div class="row">
 
 
-            <div class="col-md-4  col-sm-6">
+            <div class="col-md-3  col-sm-4">
                 <div class="footer-about-us">
                     <h2 style="color: goldenrod">Ting Tone Services</h2>
                     <h4>Location: <a
@@ -222,15 +245,20 @@
                 </div>
             </div>
 
-            <div class="col-md-4   col-sm-6">
+            <div class="col-md-5   col-sm-6">
                 <div class="footer-newsletter">
-                    <h2 style="color: goldenrod">Why Choose Us?</h2>
+                    <div class="row">
 
-                    <div class="wpb_text_column wpb_content_element ">
-                        <div class="wpb_wrapper">
+                        <div class="col-md-5   col-sm-6">
+
+                            <img src="/image-Services/repairerman.jpg">
+                        </div>
+                        <div class="col-md-7   col-sm-6">
+                            <h2 style="color: goldenrod">Why Choose Us?</h2>
+
                             <p><strong>➥ Genuine Spare Parts.</strong><br>
-                                <strong> ➥ Transparent Billing.</strong><br>
                                 <strong> ➥ Quick Service.</strong><br>
+                                <strong> ➥ Transparent Billing.</strong><br>
                                 <strong> ➥ On Spot Solution.</strong><br>
                                 <strong> ➥ Service Warranty.</strong><br>
                                 <strong> ➥ Longest Support Hours (9 am to 10 pm).</strong><br>
@@ -241,6 +269,17 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-md-3  col-sm-2">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>
