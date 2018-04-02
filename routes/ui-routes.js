@@ -76,8 +76,8 @@ UIRoutes.prototype.init = function () {
         var mail = {
             from: fromEmailAddress,
             to: toEmailAddress,
-            subject: "hello world!",
-            text: "Hello!",
+            subject: "Service Request",
+            text: "Alert Service Request!",
             html: "Hi Team,"+"<br />"+"<br />"+
                     "Check below detail of the customer."+"<br />"+"<b>"+message+"<br />"+"</b>"+"<b>"+message1+"</b>" +
                     "<br />"+"<b>"+message2+"<br />"+"</b>"+"<b>"+message3+"</b> "+"<br />"+ "answer to the customer"
