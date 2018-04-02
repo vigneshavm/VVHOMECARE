@@ -54,15 +54,15 @@ UIRoutes.prototype.init = function () {
 
         var message ="Name:"+ "\t" +singleQueue.name + "\n";
         var message1 = "Mobile No:"+ "\t" + singleQueue.mobileNo + "\n";
-        var message2 =      "Request for:"+ "\t" + singleQueue.prefer + "\n";
-        var message3 =  "Prefer Product:"+ "\t" + singleQueue.product + "\n";
+        var message2 =      "Request for:"+ "\t" + singleQueue.prefer ? singleQueue.prefer: "New" + "\n";
+        var message3 =  "Prefer Product:"+ "\t" + singleQueue.product ? singleQueue.product: "Washing Machine" + "\n";
 
 
         var mailAccountUser = 'avmvignesh0207@gmail.com';
         var mailAccountPassword = 'Vikki.02071121701';
 
         var fromEmailAddress = mailAccountUser;
-        var toEmailAddress = 'pandianthangamariappan@gmail.com';
+        var toEmailAddress = 'tingtongservices@gmail.com';
 
         var transport = nodemailer.createTransport(smtpTransport({
             service: 'gmail',
