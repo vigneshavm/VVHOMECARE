@@ -52,17 +52,20 @@ UIRoutes.prototype.init = function () {
 
         var singleQueue =req.query;
 
+        var prefer= singleQueue.prefer ? singleQueue.prefer:"New";
+        var product= singleQueue.product ? singleQueue.product:"Washing Machine";
+
         var message ="Name:"+ "\t" +singleQueue.name + "\n";
         var message1 = "Mobile No:"+ "\t" + singleQueue.mobileNo + "\n";
-        var message2 =      "Request for:"+ "\t" + singleQueue.prefer ? singleQueue.prefer: "New" + "\n";
-        var message3 =  "Prefer Product:"+ "\t" + singleQueue.product ? singleQueue.product: "Washing Machine" + "\n";
+        var message2 =      "Request for:"+ "\t" + prefer + "\n";
+        var message3 =  "Prefer Product:"+ "\t" + product + "\n";
 
 
         var mailAccountUser = 'avmvignesh0207@gmail.com';
         var mailAccountPassword = 'Vikki.02071121701';
 
         var fromEmailAddress = mailAccountUser;
-        var toEmailAddress = 'tingtongservices@gmail.com';
+        var toEmailAddress = 'avmvignesh0207@gmail.com';
 
         var transport = nodemailer.createTransport(smtpTransport({
             service: 'gmail',
