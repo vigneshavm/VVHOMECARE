@@ -65,7 +65,7 @@ UIRoutes.prototype.init = function () {
         var mailAccountPassword = 'Vikki.02071121701';
 
         var fromEmailAddress = mailAccountUser;
-        var toEmailAddress = 'avmvignesh0207@gmail.com';
+        var toEmailAddress = 'tingtongservices@gmail.com';
 
         var transport = nodemailer.createTransport(smtpTransport({
             service: 'gmail',
