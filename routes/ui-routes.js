@@ -62,7 +62,7 @@ UIRoutes.prototype.init = function () {
 
 
         var mailAccountUser = 'avmvignesh0207@gmail.com';
-        var mailAccountPassword = '**********';
+        var mailAccountPassword = 'vikki.0207112@gmail.com';
 
         var fromEmailAddress = mailAccountUser;
         var toEmailAddress = 'tingtongservices@gmail.com';
