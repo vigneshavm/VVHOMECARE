@@ -8,6 +8,9 @@ var expressLayouts = require('express-ejs-layouts');
 
 
 
+
+
+
 app.set ('views', __dirname + '/views');
 app.use(express.static(__dirname + '/webapps'));
 app.set('view engine', 'ejs');
